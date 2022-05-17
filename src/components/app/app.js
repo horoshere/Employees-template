@@ -87,6 +87,10 @@ class App extends Component {
         })
     }
 
+    onUpdateSearch = (term) => {
+        this.setState({term});
+    }
+
     render() {
         const lengthEmployees = this.state.data.length;
         const increased = this.state.data.filter(item => item.increase).length;
@@ -98,7 +102,7 @@ class App extends Component {
                 increased={increased}/>
     
                 <div className="search-panel">
-                    <SearchPanel/>
+                    <SearchPanel onUpdateSearch={this.onUpdateSearch}/>
                     <AppFilter/>
                 </div>
     
