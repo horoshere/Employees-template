@@ -19,7 +19,7 @@ class App extends Component {
                 {name: 'Alex M.', salary: 5000, increase: false, rise: false, id: 3}
             ],
             term: '',
-            filter: ''
+            filter: 'all'
         }
         this.maxId = 4;
     }
@@ -53,6 +53,17 @@ class App extends Component {
                 data: newArr
             }
         })
+    }
+
+    onChangeSalary = (name, salary) => {
+        this.setState(({data}) => ({
+            data: data.map(item => {
+                if (item.name === name) {
+                    return {...item, salary}
+                }
+                return item;
+            })
+        }))
     }
 
     onToggleProp = (id, prop) => {
@@ -122,7 +133,8 @@ class App extends Component {
                 <EmployeesList 
                 data={visibleData}
                 onDelete={this.deleteItem}
-                onToggleProp={this.onToggleProp}/>
+                onToggleProp={this.onToggleProp}
+                onChangeSalary={this.onChangeSalary}/>
                 <EmployeesAddForm onAdd={this.addItem}/>
             </div>
         );

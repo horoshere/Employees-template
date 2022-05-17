@@ -5,14 +5,15 @@ import './app-filter.css';
 class AppFilter extends Component {
     constructor (props) {
         super(props);
-        this.state = {
-            filter: ''
-        }
+        this.clazz = "btn btn-outline-light";
+        this.activeClazz = "btn-light"
+
     }
 
     onFilter = (e) => {
        const filter = e.currentTarget.getAttribute('data-filter');
-       this.setState({filter});
+       e.currentTarget.classList.add("btn-light");
+       e.currentTarget.classList.remove('btn-outline-light');
        this.props.onFilter(filter)
     }
     
@@ -20,8 +21,9 @@ class AppFilter extends Component {
         return (
             <div className="btn-group">
                 <button 
-                    className="btn btn-light"
+                    className={this.clazz}
                     type="button"
+                    data-filter='all'
                     onClick={this.onFilter}>
                         Все сотрудники
                 </button>
