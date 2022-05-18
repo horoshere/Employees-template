@@ -1,5 +1,6 @@
 ### Учебный проект по React JS с использованием **Классовых компонент**.  
-![Screenshot_3](https://user-images.githubusercontent.com/85732162/169035167-a4e60a4f-d3fa-4e3c-aba2-2dc59538b127.png)
+![Screenshot_3](https://user-images.githubusercontent.com/85732162/169035472-39c350f1-a208-4f22-afe1-e3d0de457bd1.png)
+
 
 
 
