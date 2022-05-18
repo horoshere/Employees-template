@@ -1,7 +1,4 @@
 ### Учебный проект по React JS с использованием **Классовых компонент**.  
-![Screenshot_3](https://user-images.githubusercontent.com/85732162/169035472-39c350f1-a208-4f22-afe1-e3d0de457bd1.png)
-
-
 
 
 ### Архитектура приложения построена в виде дерева компонентов между которыми перемещаются данные.  
@@ -50,4 +47,6 @@ class App extends Component {
         }
         this.maxId = 4;
     }
-```  
+```    
+### Внешний вид:  
+![Screenshot_3](https://user-images.githubusercontent.com/85732162/169035472-39c350f1-a208-4f22-afe1-e3d0de457bd1.png)
