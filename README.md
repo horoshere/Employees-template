@@ -1,9 +1,10 @@
 Учебный проект по React JS с использованием **Классовых компонент**.  
-![Screenshot_3](https://user-images.githubusercontent.com/85732162/169034406-36a41a05-bd14-4d1b-8ede-c7ffc0164a63.png)
+![Screenshot_3](https://user-images.githubusercontent.com/85732162/169035027-3006b81a-2981-4f86-b0f6-b5e720ef4114.png)
+
 
 ### Архитектура приложения построена в виде дерева компонентов между которыми перемещаются данные.  
 ```js
-//js code
+
 render() {
         const lengthEmployees = this.state.data.length;
         const increased = this.state.data.filter(item => item.increase).length;
@@ -32,7 +33,7 @@ render() {
 
 ### При чем данные находятся в главном компоненте **App**.  
 ```js
-//js code
+
 class App extends Component {
     constructor(props) {
         super(props);
