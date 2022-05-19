@@ -62,3 +62,37 @@
 .list-group-item.increase .btn-star {
     color: #aeaeae;
 }
+
+@media (max-width: 991px) {
+    .list-group-item span {
+        min-width: 160px;
+    }
+}
+
+@media (max-width: 575px) {
+    .btn-group {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 270px;
+        height: 130px;
+    }
+    .btn-group .btn:nth-child(3) {
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-bottom: 5px;
+    }
+    .list-group-item span {
+        min-width:90px;
+    }
+    .list-group-item input {
+        min-width:50px;
+    }
+    form.add-form.d-flex {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    input.form-control.new-post-label {
+        width: 270px;
+    }
+}
